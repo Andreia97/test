@@ -133,7 +133,8 @@
         var baseEsriImagery=L.esri.basemapLayer('Imagery');
         baseEsriImagery.addTo(map);
 
-        var baseEsriStreets=L.esri.basemapLayer('Streets'); 
+        var baseEsriStreets=L.esri.basemapLayer('Streets');
+        baseEsriStreets.addTo(map)
 
        
 
@@ -836,7 +837,7 @@
 
        
 
-        L.control.layers(baselayers).addTo(map);
+        //L.control.layers(baselayers).addTo(map);
         //L.control.layers( '', overlays).addTo(map);
         //L.control.layers( '', overlays1).addTo(map);
         //L.control.layers( '', overlays2).addTo(map);
