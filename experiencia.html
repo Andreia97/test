@@ -143,18 +143,17 @@
         //*tipo de mapa
         var basemap=L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{    
         });
-        basemap.addTo(map);
 
         var baseEsriImagery=L.esri.basemapLayer('Imagery');
         baseEsriImagery.addTo(map);
 
         var baseEsriStreets=L.esri.basemapLayer('Streets');
-        baseEsriStreets.addTo(map)
+        
 
        
 
         //* adicionar estilo ao geojason
-        var thetrail=L.geoJSON(trail, {
+/*        var thetrail=L.geoJSON(trail, {
             color:'#800000',
             weight: 2,
         });
@@ -763,7 +762,7 @@
 
         // definir legenda para aparecer 
     
-/*              var baselayers={
+              var baselayers={
                         'Mapa Base': basemap,
                         'Streets': baseEsriStreets,
                         'Imagery': baseEsriImagery
